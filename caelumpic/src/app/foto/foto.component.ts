@@ -1,8 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'foto',
   templateUrl: './foto.component.html'
 })
 
-class FotoComponent {}
+export class FotoComponent {
+
+    @Input() url;
+    @Input() titulo;
+
+}
