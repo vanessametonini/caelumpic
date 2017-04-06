@@ -7,16 +7,20 @@ import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module'
 
 import 'rxjs/add/operator/map';
+import { PainelModule } from './painel/painel.module';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    FotoModule
+    FotoModule,
+    PainelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
