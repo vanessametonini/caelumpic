@@ -9,11 +9,13 @@ import { FotoModule } from './foto/foto.module'
 import 'rxjs/add/operator/map';
 import { PainelModule } from './painel/painel.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ListagemComponent } from './listagem/listagem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule,
