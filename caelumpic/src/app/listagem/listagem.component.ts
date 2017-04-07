@@ -12,7 +12,7 @@ export class ListagemComponent {
 
     constructor(http: Http) {
 
-        http.get('v1/fotos')
+        http.get('http://localhost:3000/v1/fotos')
             .map(res => res.json())
             .subscribe(
                 fotos => this.fotos = fotos,
